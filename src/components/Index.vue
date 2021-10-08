@@ -1,9 +1,11 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Vue {{title}}</h1>
     <input v-model="title"/>
+    <br />
+    <br />
     <div>
-      <input v-model="num1"/> + <input v-model="num2"/> = {{num1 + num2}}
+      <input v-model="num1"/> + <input v-model="num2"/> = total1: {{total1}} | total2 * Math.PI: {{total2}}
     </div>
   </div>
 </template>
