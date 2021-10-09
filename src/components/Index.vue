@@ -7,6 +7,9 @@
     <div>
       <input v-model="num1"/> + <input v-model="num2"/> = total1: {{total1}} | total2 * Math.PI: {{total2}}
     </div>
+    <br />
+    <br />
+    <button @click="openDialog">点我试试</button>
   </div>
 </template>
 <script>

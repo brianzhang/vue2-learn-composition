@@ -1,3 +1,4 @@
+import TpDialog from '../Dialog/LpDialog';
 import { reactive, watch, watchEffect, getCurrentInstance } from '@vue/composition-api'
 
 export default () => {
@@ -30,10 +31,14 @@ export default () => {
   const stop2 = watchEffect(() => {
     state.total2 = state.total1 + Math.PI
   })
+  const openDialog = () => {
+    TpDialog({ title: 'test', content: 'test' })
+  }
   return {
     stop,
     stop2,
     state,
+    openDialog,
     inputValue,
   }
 }
