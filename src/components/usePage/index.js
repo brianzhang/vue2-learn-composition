@@ -10,7 +10,8 @@ export default () => {
     num1: 0,
     num2: 0,
     total1: 0,
-    total2: 0
+    total2: 0,
+    name: ''
   })
   const inputValue = (val) => {
     console.log(val)
@@ -34,10 +35,15 @@ export default () => {
   const openDialog = () => {
     TpDialog({ title: 'test', content: 'test' })
   }
+  const getColor = (name) => {
+    console.log(name)
+    return name ? 'red' : '#ccc';
+  }
   return {
     stop,
     stop2,
     state,
+    getColor,
     openDialog,
     inputValue,
   }

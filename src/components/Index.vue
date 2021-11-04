@@ -10,6 +10,11 @@
     <br />
     <br />
     <button @click="openDialog">点我试试</button>
+    <br />
+    <br />
+    <div style="font-size:14px;">
+      <input v-model="name"/> <label :style="'font-color: ' + getColor(name) + ';'">{{name}}</label>
+    </div>
   </div>
 </template>
 <script>

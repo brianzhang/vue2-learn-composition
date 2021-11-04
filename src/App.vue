@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+    <TestPage />
     <index />
     <Footer />
   </div>
@@ -10,11 +11,13 @@
 import Index from './components/Index.vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import TestPage from './components/TestPage.vue'
 export default {
   name: 'App',
   components: {
     // HelloWorld,
     Header,
+    TestPage,
     Index,
     Footer
   }

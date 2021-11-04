@@ -1,5 +1,5 @@
 <template>
-  <h2>{{'111'}}</h2>
+  <h2>{{'Footer'}}</h2>
 </template>
 <script setup>
   // const title = 'footer';
